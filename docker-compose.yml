@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: bitnami/postgresql:latest
+    restart: always
+    container_name: fast_api
+    environment:
+      POSTGRES_USER: fastapi
+      POSTGRES_PASSWORD: fastpai
+      POSTGRES_DB: udemy_fastapi
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
