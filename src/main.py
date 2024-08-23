@@ -1,8 +1,8 @@
 from enum import Enum
 from fastapi import FastAPI
-from infrastructure.routes.http_routes import router_list
+from shared.infrastructure import http_global
 
 app = FastAPI()
 
-for element in router_list:
-    app.include_router(element.router)
+for element in http_global.http_list:
+    app.include_router(element)
