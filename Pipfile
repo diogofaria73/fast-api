@@ -3,10 +3,11 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[packages]
-fastapi = {extras = ["standard"], version = "*"}
-
 [dev-packages]
 
 [requires]
 python_version = "3.12"
+
+[packages]
+fastapi = {extras = ["standard"], version = "*"}
+pandas = "*"
