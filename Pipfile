@@ -11,3 +11,4 @@ python_version = "3.12"
 [packages]
 fastapi = {extras = ["standard"], version = "*"}
 pandas = "*"
+sqlalchemy = "*"
